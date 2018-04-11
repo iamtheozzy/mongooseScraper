@@ -68,7 +68,7 @@ app.get("/", function(req, res) {
 
 // scrape route
 app.get("/scrape", function(req, res) {
-	request("https://www.nytimes.com/section/world", function(error, response, html) {
+	request("https://www.nytimes.com/section/technology", function(error, response, html) {
 	var $ = cheerio.load(html);
 
 	$("div.story-body").each(function(i, element) {
