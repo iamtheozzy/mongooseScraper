@@ -140,6 +140,7 @@ app.post("/save/:id", function(req, res) {
 
 app.post("/note/:id", function (req, res) {
   var note = new Note(req.body);
+  console.log(note);
   console.log(req.body);
   note.save(function (err, doc) {
     if (err) throw err;
