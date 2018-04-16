@@ -30,5 +30,8 @@
 </div>
 
 <div class="message">
-    <h2>{{message}}</h3>
+    <h2 class="text-center">{{message}}</h3>
+    <form class="form-inline mx-auto" action="/scrape" method="GET" >
+            <button class="btn btn-outline-success mx-auto mt-4" type="submit" id="refresh-articles">Scrape New Articles</button>
+    </form>
 </div>
